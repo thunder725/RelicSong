@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 732f6e3e1891b7044be8dd07b1a43063
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: EndFeeler
+    100002: EndFeelerA
+    100004: EndFeelerB
+    100006: EndFeelerC
+    100008: EndFeelerD3
+    100010: EndFeelerE
+    100012: EndFeelerF
+    100014: EndHair6
+    100016: EndHead
+    100018: EndHips
+    100020: EndLFoot
+    100022: EndLHand
+    100024: EndRFoot
+    100026: EndRHand
+    100028: Feeler
+    100030: FeelerA
+    100032: FeelerB
+    100034: FeelerC
+    100036: FeelerD1
+    100038: FeelerD2
+    100040: FeelerD3
+    100042: FeelerE
+    100044: FeelerF
+    100046: Hair1
+    100048: Hair2
+    100050: Hair3
+    100052: Hair4
+    100054: Hair5
+    100056: Hair6
+    100058: Head
+    100060: Hips
+    100062: LArm
+    100064: LFoot
+    100066: LForeArm
+    100068: LHand
+    100070: LLeg
+    100072: LThigh
+    100074: Meloetta
+    100076: //RootNode
+    100078: Origin
+    100080: pm0648_11
+    100082: pm0648_11_BodySkin
+    100084: RArm
+    100086: RFoot
+    100088: RForeArm
+    100090: RHand
+    100092: RLeg
+    100094: RThigh
+    100096: Spine1
+    100098: Spine2
+    100100: Waist
+    400000: EndFeeler
+    400002: EndFeelerA
+    400004: EndFeelerB
+    400006: EndFeelerC
+    400008: EndFeelerD3
+    400010: EndFeelerE
+    400012: EndFeelerF
+    400014: EndHair6
+    400016: EndHead
+    400018: EndHips
+    400020: EndLFoot
+    400022: EndLHand
+    400024: EndRFoot
+    400026: EndRHand
+    400028: Feeler
+    400030: FeelerA
+    400032: FeelerB
+    400034: FeelerC
+    400036: FeelerD1
+    400038: FeelerD2
+    400040: FeelerD3
+    400042: FeelerE
+    400044: FeelerF
+    400046: Hair1
+    400048: Hair2
+    400050: Hair3
+    400052: Hair4
+    400054: Hair5
+    400056: Hair6
+    400058: Head
+    400060: Hips
+    400062: LArm
+    400064: LFoot
+    400066: LForeArm
+    400068: LHand
+    400070: LLeg
+    400072: LThigh
+    400074: Meloetta
+    400076: //RootNode
+    400078: Origin
+    400080: pm0648_11
+    400082: pm0648_11_BodySkin
+    400084: RArm
+    400086: RFoot
+    400088: RForeArm
+    400090: RHand
+    400092: RLeg
+    400094: RThigh
+    400096: Spine1
+    400098: Spine2
+    400100: Waist
+    2100000: 'Material #11'
+    2100002: 'Material #12'
+    2100004: 'Material #13'
+    4300000: Meloetta
+    9500000: //RootNode
+    13700000: Meloetta
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
