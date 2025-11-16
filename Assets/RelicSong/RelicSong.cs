@@ -843,7 +843,7 @@ public class RelicSong : MonoBehaviour {
 
 
 #pragma warning disable 414
-    private readonly string TwitchHelpMessage = @"“!{0} 1 3 4” to press the note heights 1 3 4 (bottommost is 1). “!{0} Switch” or “!{0} s” to Switch Mode. “!{0} 1 2 4 s 2 4 s” works too. Don't forget Spaces between numbers.";
+    private readonly string TwitchHelpMessage = @"“!{0} 2 3 5” to press the note heights 2 3 5 (bottommost is 1). “!{0} Switch” or “!{0} s” to Switch Mode. “!{0} 1 2 4 s 3 5 s” works too. Don't forget Spaces between numbers.";
 #pragma warning restore 414
 
     IEnumerator ProcessTwitchCommand(string command)
