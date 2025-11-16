@@ -14,7 +14,7 @@ MonoBehaviour:
   id: RelicSong
   title: Relic Song
   author: thunder725
-  description: 'Relic Song - 1.0
+  description: 'Relic Song - 1.1
 
 
     Record Notes after each module solve and submit back the unique ones at the end.
@@ -33,7 +33,12 @@ MonoBehaviour:
 
     =-= 1.0
 
-    - Initial Release'
+    - Initial Release
+
+
+    =-= 1.1
+
+    - Fixed TP Help Message'
   version: 1.0
   outputFolder: build
   previewImage: {fileID: 2800000, guid: f335ca7a0c2f83b4b894a3d226f8f17b, type: 3}
