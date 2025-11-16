@@ -17,7 +17,7 @@ MonoBehaviour:
   description: 'Relic Song - 1.0
 
 
-    Determine which insulation pile to press using the ones scattered on the module
+    Record Notes after each module solve and submit back the unique ones at the end.
 
 
     Module ID: RelicSong

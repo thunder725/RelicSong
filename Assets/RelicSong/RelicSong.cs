@@ -161,7 +161,7 @@ public class RelicSong : MonoBehaviour {
 
 
         // Else, if we're in a regular Stage.
-        Debug.LogFormat("[Relic Song #{0}] Stage #{1}.", moduleId, currentStageNumber);
+        Debug.LogFormat("[Relic Song #{0}] =-=-= Stage #{1} =-=-=", moduleId, currentStageNumber);
 
         // We should change Mode more often than not
         // But first stage starts Green always
@@ -519,7 +519,7 @@ public class RelicSong : MonoBehaviour {
         }
 
 
-        Debug.LogFormat("[Relic Song #{0}] All other non-ignored modules solved. Entering Submission Mode. Switching to Green Mode", moduleId);
+        Debug.LogFormat("[Relic Song #{0}] =-=-= All other non-ignored modules solved. Entering Submission Mode. Switching to Green Mode. =-=-=", moduleId);
 
         currentlySubmittedNotes = new List<int>();
 
@@ -580,7 +580,7 @@ public class RelicSong : MonoBehaviour {
             }
             else
             {
-                Debug.LogFormat("[Relic Song #{0}] !!STRIKE!!  Not all correct Notes were submitted in Green Mode.", moduleId);
+                Debug.LogFormat("[Relic Song #{0}] !!STRIKE!!  Not all correct Notes were submitted in Green Mode.  !!STRIKE!!", moduleId);
                 thisModule.HandleStrike();
 
                 // Smaller interaction Punch if incorrect, because the Clef doesn't move
@@ -597,7 +597,7 @@ public class RelicSong : MonoBehaviour {
             }
             else
             {
-                Debug.LogFormat("[Relic Song #{0}] !!STRIKE!!  Not all correct Notes were submitted in Orange Mode.", moduleId);
+                Debug.LogFormat("[Relic Song #{0}] !!STRIKE!!  Not all correct Notes were submitted in Orange Mode.  !!STRIKE!!", moduleId);
                 thisModule.HandleStrike();
 
                 // Smaller interaction Punch if incorrect, because the Clef doesn't move
@@ -638,7 +638,7 @@ public class RelicSong : MonoBehaviour {
             }
             else
             {
-                Debug.LogFormat("[Relic Song #{0}] !!STRIKE!! Note Height {1} was not expected in Green Mode.", moduleId, noteHeight);
+                Debug.LogFormat("[Relic Song #{0}] !!STRIKE!! Note Height {1} was not expected in Green Mode.  !!STRIKE!!", moduleId, noteHeight);
                 // Not present? Strike
                 thisModule.HandleStrike();
             }
@@ -658,7 +658,7 @@ public class RelicSong : MonoBehaviour {
             }
             else
             {
-                Debug.LogFormat("[Relic Song #{0}] !!STRIKE!! Note Height {1} was not expected in Orange Mode.", moduleId, noteHeight);
+                Debug.LogFormat("[Relic Song #{0}] !!STRIKE!! Note Height {1} was not expected in Orange Mode.  !!STRIKE!!", moduleId, noteHeight);
                 // Not present? Strike
                 thisModule.HandleStrike();
             }
@@ -696,10 +696,11 @@ public class RelicSong : MonoBehaviour {
 
         // Switch back to Green Mode
         currentMode = RelicSongMode.Aria;
-        // Custom Literally Shiny material
-        musicSheetCubeRenderer.material = shinyMaterial;
 
         StartCoroutine(MoveClefToOtherSide());
+
+        StartCoroutine(AnimateModuleSolve());
+        
 
 
         // Remove all visual Notes
@@ -711,9 +712,32 @@ public class RelicSong : MonoBehaviour {
         {
             _note.gameObject.SetActive(false);
         }
+    }
 
+    IEnumerator AnimateModuleSolve()
+    {
+        // Wait for a single frame to allow the Clef to start moving
+        // Doing two Coroutines at once seems to not make Unity happy
+        yield return null;
+
+        // Cycle through both materials a few times
+        for (int i = 0; i < 6; i ++)
+        {
+            musicSheetCubeRenderer.material = ariaMaterial;
+
+            yield return new WaitForSeconds(0.1f);
+
+            musicSheetCubeRenderer.material = pirouetteMaterial;
+
+            yield return new WaitForSeconds(0.1f);
+        }
+
+
+        // Custom Literally Shiny material
+        musicSheetCubeRenderer.material = shinyMaterial;
+
+        // Solve module sound & feedback
         thisModuleAudio.PlaySoundAtTransform(solveSound.name, transform);
-
         thisModule.HandlePass();
     }
 
